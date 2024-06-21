@@ -1,0 +1,14 @@
+function isPalindrome(str) {
+    if (str.length <= 1) {
+        return true;
+    }
+    if (str[0] !== str[str.length - 1]) {
+        return false;
+    }
+    console.log(str.slice(1,-1),"bgggg");
+
+    return isPalindrome(str.slice(1,-1));
+}
+
+
+console.log(isPalindrome("racecar")); // Output: true
