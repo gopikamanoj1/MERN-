@@ -1,0 +1,35 @@
+
+### Event Propagation
+
+Event propagation in JavaScript refers to how events travel through the DOM (Document Object Model) from the target element to its
+ ancestors (capturing phase) and then back down again (bubbling phase). When an event occurs on an element, like a click, it doesn't 
+ just affect that element; it also affects its parent elements up to the document root. This process is divided into two 
+ phases: capturing and bubbling. During the capturing phase, the event starts from the outermost parent and moves inward towards
+  the target element. After reaching the target, the event then bubbles back up through the parent elements. This mechanism allows
+you to handle events at different levels of the DOM hierarchy based on where you attach event listeners.
+
+### Event Delegation
+
+Event delegation is a technique where you attach a single event listener to a parent element, rather than attaching multiple event
+ listeners to each child element. This approach is beneficial when you have a large number of child elements or when child elements 
+ are dynamically added or removed from the DOM. Instead of handling events directly on individual child elements, you listen for 
+ events on the parent element and use the `event.target` property to determine which specific child element triggered the event. 
+ Event delegation simplifies event management and can improve performance by reducing the number of event listeners.
+
+### Event Bubbling
+
+Event bubbling is the phase of event propagation where an event travels from the target element back up through its ancestors in
+the DOM hierarchy. After an event is handled on the target element, it bubbles up through each parent element until it reaches the
+document root. This allows parent elements to "hear" about events that occur on their children without having a direct event 
+listener on each child element. Event bubbling is the default behavior in most modern browsers and can be useful for structuring
+event handling in complex DOM structures.
+
+### Debouncing
+
+Debouncing is a technique used to limit the rate at which a function is executed. It's commonly used with event handlers that trigger
+actions that may be computationally expensive or resource-intensive, such as fetching data from a server or updating the UI. When you 
+debounce a function, you ensure that it will not be called repeatedly within a short period of time. Instead, the function will only 
+execute after a specified delay has passed since the last invocation. This helps optimize performance by reducing the number of times 
+a function is executed unnecessarily, especially in scenarios where rapid firing of events could lead to performance bottlenecks.
+
+

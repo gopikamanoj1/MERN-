@@ -1,0 +1,5 @@
+js code running in synchronous and asynchrous
+<!------------------------------------------------>
+
+JavaScript runs in environments like browsers and Node.js, using engines such as V8 to execute code. The process begins with parsing, where the code is tokenized and converted into an Abstract Syntax Tree (AST). This AST is then compiled into intermediate bytecode, initially interpreted by the engine. For frequently executed code, Just-In-Time (JIT) compilation optimizes and converts bytecode to machine code for faster execution. JavaScript operates with a call stack to manage function calls, and it handles asynchronous operations using Web APIs, task queues, and the event loop. The event loop continuously checks if the call stack is empty and moves callbacks from the task queue for execution. Promises and other microtasks are prioritized in the microtask queue, running before regular tasks. Additionally, JavaScript engines include garbage collection to automatically free memory by removing unreferenced objects, ensuring efficient memory management. This intricate process allows JavaScript to handle both synchronous and asynchronous tasks smoothly.
+

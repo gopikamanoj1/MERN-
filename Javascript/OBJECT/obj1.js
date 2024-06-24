@@ -33,3 +33,13 @@ return test
 }
 
 console.log(object(people));
+
+// let obj={};
+// for(let item of people){
+//     if(!obj[item.age]){
+//        obj[item.age]=[item]
+//     }else{
+//         obj[item.age].push(item)
+//     }
+// }
+// console.log(obj)

@@ -16,7 +16,7 @@ function flattenObject(obj, path = '') {
                 Object.assign(result, flattenObject(obj[key], newKey));
             } else {
                 result[newKey] = obj[key];
-            }
+            }   
         // }
     }
 

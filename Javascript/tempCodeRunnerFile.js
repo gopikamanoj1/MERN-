@@ -1,1 +1,1 @@
-    mark.push({ name: name, total: sum });
+            array[secondKey]=n
