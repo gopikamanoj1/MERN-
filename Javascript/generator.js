@@ -11,5 +11,5 @@ function* printRes(){
 let res=printRes()
 
 for( let i=0;i<=10; i++){
-    console.log(res.next())
+    console.log(res.next().value)
 }

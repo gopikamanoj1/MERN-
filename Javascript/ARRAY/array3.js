@@ -23,7 +23,6 @@ let arr = [1, 3, 2, 2, 5, 5, 56, 6, 6, 5, 2, 9, 9, 1];
 
 function removeLastDuplicates(arr) {
   for (let i = 0; i < arr.length; i++) {
-    console.log(arr.lastIndexOf(arr[i]) ,"pp");
     if (arr.lastIndexOf(arr[i]) && i !== arr.lastIndexOf(arr[i])) {
       arr.splice(arr.lastIndexOf(arr[i]), 1);
     }

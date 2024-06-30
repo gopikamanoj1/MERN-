@@ -33,3 +33,80 @@ execute after a specified delay has passed since the last invocation. This helps
 a function is executed unnecessarily, especially in scenarios where rapid firing of events could lead to performance bottlenecks.
 
 
+
+Event Delegation: One parent handles events for many children.
+Event Propagation: How events move through the DOM.
+Event Bubbling: Events move up from the target element.
+Event Capturing: Events move down to the target element.
+Throttling: Limits how often a function runs.
+Debouncing: Delays function execution until no events occur for a set time.
+Preventing Default Behavior: Stops the default action of an event.
+Stopping Propagation: Stops the event from moving up or down the DOM.
+
+
+
+
+
+### Event Delegation
+
+**Event delegation** is a technique where you add a single event listener to a parent element instead of adding multiple event listeners to individual child elements. The event listener on the parent element can handle events that happen on its children. This is useful for improving performance and managing event listeners more easily.
+
+**Example**:
+Instead of adding a click event listener to each button in a list, you add one listener to the parent container.
+
+
+
+
+### Event Propagation
+
+**Event propagation** refers to the way events travel through the DOM tree. It has three phases:
+
+1. **Capturing Phase**: The event starts from the root and travels down to the target element.
+2. **Target Phase**: The event reaches the target element.
+3. **Bubbling Phase**: The event bubbles up from the target element to the root.
+
+### Event Bubbling
+
+**Event bubbling** is the phase where an event starts from the target element and travels up to the root element, triggering any event listeners on its way up.
+
+**Example**:
+If you click a button inside a div, the click event will first trigger on the button, then on the div, and then on its parent elements up to the root.
+
+
+
+### Event Capturing
+
+**Event capturing** (or trickling) is the phase where an event starts from the root and travels down to the target element, triggering any event listeners on its way down. By default, event listeners are not in capturing mode, but you can set them to be.
+
+**Example**:
+To see capturing in action, you set the `capture` option to `true` when adding an event listener.
+
+
+
+### Throttling
+
+**Throttling** is a technique to ensure a function is called at most once in a specified period of time, no matter how many times an event is triggered. It helps in optimizing performance for events that may fire frequently, such as scrolling or resizing.
+
+**Example**:
+Throttling a function to be called at most once every 500 milliseconds.
+
+
+
+### Debouncing
+
+**Debouncing** is a technique to ensure a function is called only after a specified period of time has passed since the last time it was invoked. This is useful for events like key presses, where you want to wait until the user has stopped typing before performing an action.
+
+**Example**:
+Debouncing a function to be called only after 300 milliseconds of no activity.
+
+
+
+### Summary
+
+- **Event Delegation**: Adding one event listener to a parent to manage events on its children.
+- **Event Propagation**: The way events move through the DOM in capturing and bubbling phases.
+- **Event Bubbling**: Event travels up from the target element to the root.
+- **Event Capturing**: Event travels down from the root to the target element.
+- **Throttling**: Ensures a function is called at most once in a specified time period.
+- **Debouncing**: Ensures a function is called only after a specified time period of no activity.
+

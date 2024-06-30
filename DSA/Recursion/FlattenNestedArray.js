@@ -21,4 +21,4 @@ function flat (arr){
     }
     return r
 }
-console.log(flat([1,2,[3,6,[6,9]]]))
+  console.log(flat([1,2,[3,6,[6,9]]]))

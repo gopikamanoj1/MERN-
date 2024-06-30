@@ -9,9 +9,7 @@ function StringCompression(str){
     let test=''
     let count=1
     for(let i=0;i<str.length;i++){
-      
-        curr=str[i]
-        console.log(str[i]);
+
         if(str[i]==str[i+1]){
             count ++   
       

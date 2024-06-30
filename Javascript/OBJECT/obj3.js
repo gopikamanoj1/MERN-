@@ -11,7 +11,7 @@ function flattenObject(obj, path = '') {
         // if (obj.hasOwnProperty(key)) {
             let newKey = path ? `${path}.${key}` : `${key}`;
 
-            if (typeof obj[key] === 'object' && obj[key] !== null && !Array.isArray(obj[key])) {
+            if (typeof obj[key] === 'object' ) {
                 // Recursively call for nested objects
                 Object.assign(result, flattenObject(obj[key], newKey));
             } else {

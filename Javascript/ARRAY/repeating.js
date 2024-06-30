@@ -1,7 +1,5 @@
 // most repeating element
-
 let array=[1,2,3,4,9,2,4,7,3,7,1,4]
-
 
 function repeat(arr) {
     let MaxCout = 0;

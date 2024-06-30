@@ -1,0 +1,42 @@
+
+### `setImmediate`
+
+**Purpose**: `setImmediate` executes a callback function immediately after the current event loop completes. It's designed for scenarios where you want to defer the execution of a function until the current stack is cleared. Note that `setImmediate` is not part of the JavaScript language standard and is only available in Node.js, not in browsers.
+
+**Cancellation**: Use `clearImmediate(immediateId)`.
+
+
+
+
+
+### `setTimeout`
+
+**Purpose**: `setTimeout` schedules a callback function to be executed once after a specified delay (in milliseconds). It is widely used in both Node.js and browsers for delaying the execution of code.
+
+**Cancellation**: Use `clearTimeout(timeoutId)`.
+
+
+
+
+
+### `setInterval`
+
+**Purpose**: `setInterval` schedules a callback function to be executed repeatedly at specified intervals (in milliseconds). The function continues to run until `clearInterval` is called.
+
+
+**Cancellation**: Use `clearInterval(intervalId)`.
+
+
+
+
+
+### Summary of Differences
+
+- **setImmediate**: Executes the callback immediately after the current event loop completes. Available only in Node.js, not in browsers. Use it when you need to defer the execution of a function until the current stack is cleared.
+- **setTimeout**: Schedules the callback to run once after a specified delay. Available in both Node.js and browsers. Use it for delaying execution, creating timers, debouncing user input, and other time-based actions.
+- **setInterval**: Schedules the callback to run repeatedly at specified intervals until cleared. Available in both Node.js and browsers. Use it for repeated actions like updating a clock, polling servers, or running animations at regular intervals.
+
+By understanding the purpose and usage of each function, you can choose the right one for your specific needs in JavaScript programming.
+
+Best regards,
+[Your Name]

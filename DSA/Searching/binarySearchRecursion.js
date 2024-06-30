@@ -14,7 +14,7 @@ const binarySearchRecursion = (array,target, left=0, right = array.length-1)=>{
     }
 }
 
-
+ 
 let array = [1,2,3,4,5,6,7]
 let target= 7
 console.log(binarySearchRecursion(array, target));

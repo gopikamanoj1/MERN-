@@ -1,0 +1,48 @@
+### Easy
+1. *What is MongoDB?*
+2. *How do you create a new database in MongoDB?*
+3. *How do you switch to a specific database in MongoDB?*
+4. *What command is used to display all collections in a database?*
+5. *How do you insert a document into a MongoDB collection?*
+6. *How can you retrieve all documents from a MongoDB collection?*
+7. **What is the purpose of the ObjectId in MongoDB?**
+8. *How do you delete a document from a MongoDB collection?*
+9. *How do you update a document in MongoDB?*
+10. *What is the command to drop a collection in MongoDB?*
+
+### Medium
+1. **How do you use the find method to retrieve specific fields from documents?**
+2. **What is the difference between find and findOne in MongoDB?**
+3. *How do you create an index in MongoDB and why would you use it?*
+4. **Explain the use of $set and $unset in MongoDB update operations.**
+5. **How can you use the aggregate function in MongoDB?**
+6. **What is the upsert option in MongoDB update operations?**
+7. *How do you perform a text search in MongoDB?*
+8. *Explain the difference between embedding documents and referencing documents in MongoDB.*
+9. *What are MongoDB projections and how do you use them?*
+10. **How do you use the bulkWrite operation in MongoDB?**
+
+### Hard
+1. *Explain how MongoDB's replica set works.*
+2. *What is sharding in MongoDB and how does it improve performance?*
+3. *How do you set up a sharded cluster in MongoDB?*
+4. *Describe the process of data modeling in MongoDB.*
+5. **What is the changeStream feature in MongoDB and how do you use it?**
+6. *How does MongoDB handle transactions and what are the limitations?*
+7. **Explain the role of the mongod and mongos processes in MongoDB.**
+8. *What are the different types of indexes available in MongoDB?*
+9. *How do you handle large data sets in MongoDB efficiently?*
+10. *What are the best practices for schema design in MongoDB?*
+
+### Extra Hard
+1. *How do you optimize MongoDB performance for a write-heavy workload?*
+2. *What are some common pitfalls when designing a schema in MongoDB, and how can you avoid them?*
+3. *Describe the process of backing up and restoring a MongoDB database.*
+4. *How do you handle conflicts in a MongoDB replica set?*
+5. *Explain the CAP theorem in the context of MongoDB.*
+6. *How can you implement a custom sharding strategy in MongoDB?*
+7. *What are the security best practices for deploying MongoDB in a production environment?*
+8. *How do you manage and monitor MongoDB clusters using tools like MongoDB Atlas or Ops Manager?*
+9. *Describe the process of migrating data from a relational database to MongoDB.*
+10. *How can you use MongoDB's geospatial features for location-based queries?*
+

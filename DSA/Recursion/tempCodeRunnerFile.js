@@ -1,3 +1,0 @@
- // if(num  > mul){
-    //     return
-    // }

@@ -18,8 +18,6 @@ function sentenceToArray(str) {
   if (word.length > 0) {
     words.push(word);
   }
-
-
   return words;
 }
 
