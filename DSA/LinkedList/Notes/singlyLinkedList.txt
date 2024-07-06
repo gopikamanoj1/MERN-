@@ -1,6 +1,7 @@
 
 
-A singly linked list is a fundamental data structure in computer science used to represent a sequence of elements. It is a type of linked list in which each element, called a node, contains two parts:
+A singly linked list is a fundamental data structure in computer science used to represent a sequence of elements.
+ It is a type of linked list in which each element, called a node, contains two parts:
 
 1. **Data**: The value or information stored in the node.
 2. **Next**: A reference (or pointer) to the next node in the sequence.
@@ -16,14 +17,18 @@ Each node in a singly linked list has the following structure:
 1. **Creating a Node**: A new node is created with a value and a `next` pointer initially set to `null`.
 
 2. **Inserting a Node**:
-   - **At the Beginning**: To insert a node at the beginning, make the new node's `next` pointer point to the current head of the list and then update the head to be the new node.
-   - **At the End**: To insert a node at the end, traverse the list to find the last node and update its `next` pointer to point to the new node.
-   - **At a Specific Position**: To insert a node at a specific position, traverse the list to find the node after which the new node should be inserted and update the pointers accordingly.
+   - **At the Beginning**: To insert a node at the beginning, make the new node's `next` pointer 
+     point to the current head of the list and then update the head to be the new node.
+   - **At the End**: To insert a node at the end, traverse the list to find the last node and 
+     update its `next` pointer to point to the new node.
+   - **At a Specific Position**: To insert a node at a specific position, traverse the list to 
+     find the node after which the new node should be inserted and update the pointers accordingly.
 
 3. **Deleting a Node**:
    - **From the Beginning**: Update the head to point to the second node.
    - **From the End**: Traverse the list to find the second-last node and set its `next` pointer to `null`.
-   - **From a Specific Position**: Traverse the list to find the node before the one to be deleted and update the pointers to bypass the node to be deleted.
+   - **From a Specific Position**: Traverse the list to find the node before the one to be 
+       deleted and update the pointers to bypass the node to be deleted.
 
 4. **Traversing the List**: To visit each node in the list, start from the head and follow the `next` pointers until you reach the end (`null`).
 

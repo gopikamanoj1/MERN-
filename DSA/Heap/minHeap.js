@@ -90,5 +90,5 @@ heap.insert(30);
 heap.insert(90);
 heap.insert(25);
 console.log(heap.heap); // Should print the heap array in min-heap order
-heap.remove(); // Should remove the minimum element (20)
+// heap.remove(); 
 console.log(heap.heap); // Should print the heap array after deletion

@@ -60,6 +60,55 @@ class Graph {
     }
     return false;
   }
+  
+  dfs(start){
+    const result=[]
+    const visited={}
+    const adjacencyList= this.adjacencyList
+
+    (function dfsHelper(vertex){
+      if(!vertex){
+        return
+      }
+      visited[vertex]=true
+      result.push(vertex)
+      adjacencyList[vertex].forEach((neighbor)=>{
+        
+        if(!visited[neighbor]){
+          dfsHelper(neighbor)
+        }
+      })
+    })(start)
+
+  }
+
+
+  bfs(start) {
+    const queue = [start];
+    const result = [];
+    const visited = {};
+    visited[start] = true;
+
+    while (queue.length) {
+      let current = queue.shift();
+      result.push(current);
+
+      this.adjacencyList[current].forEach((neighbor) => {
+        if (!visited[neighbor]) {
+          visited[neighbor] = true;
+          queue.push(neighbor);
+        }
+      });
+    }
+
+    return result;
+  }
+
+
+
+
+
+
 }
 
 const graph = new Graph();

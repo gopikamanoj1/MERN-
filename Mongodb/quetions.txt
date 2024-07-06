@@ -23,7 +23,7 @@
 10. **How do you use the bulkWrite operation in MongoDB?**
 
 ### Hard
-1. *Explain how MongoDB's replica set works.*
+1. *Explain how MongoDB's replica set works.* 
 2. *What is sharding in MongoDB and how does it improve performance?*
 3. *How do you set up a sharded cluster in MongoDB?*
 4. *Describe the process of data modeling in MongoDB.*

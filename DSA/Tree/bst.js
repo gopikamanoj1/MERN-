@@ -4,7 +4,7 @@ class Node {
     this.left = null;
     this.right = null;
   }
-}
+} 
 
 class Bst {
   constructor() {
@@ -16,7 +16,7 @@ class Bst {
 
   insert(value) {
     const newNode = new Node(value);
-    if (this.root == null) {
+    if (this.root == null) {  
       this.root = newNode;
     } else {
       return this.insertNode(this.root, newNode);
@@ -59,6 +59,7 @@ class Bst {
       this.preOrder(root.right);
     }
   }
+
   postOrder(root = this.root) {
     if (root) {
       this.postOrder(root.left);
@@ -66,6 +67,7 @@ class Bst {
       console.log(root.value);
     }
   }
+
   inOrder(root = this.root) {
     if (root) {
       this.inOrder(root.left);
@@ -73,14 +75,14 @@ class Bst {
       this.inOrder(root.right);
     }
   }
-  min(root) {
+  min(root=this.root) {
     if (!root.left) {
       return root.value;
     } else {
       return this.min(root.left);
     }
   }
-  max(root) {
+  max(root=this.root) {
     if (!root.right) {
       return root.value;
     } else {
@@ -162,8 +164,11 @@ bst.insert(2);
 bst.insert(20);
 
 bst.preOrder();
-console.log("hghgg");
-bst.inOrder();
-console.log("hghgg");
-bst.postOrder();
+// console.log("hghgg");
+// bst.inOrder();
+// console.log("hghgg");
+// bst.postOrder();
 console.log(bst.search(2));
+console.log("max is",bst.max());
+console.log("min is",bst.min());
+
